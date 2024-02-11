@@ -1,7 +1,6 @@
 from multiprocessing import Pool, cpu_count
 from time import sleep, time, ctime
 import logging
-from threading import Thread
 
 
 def factorize(*args):
@@ -12,7 +11,6 @@ def factorize(*args):
         for j in range(1, number + 1):
             if number % j == 0:
                 factors.append(j)
-
         result.append(factors)
     return result
 
